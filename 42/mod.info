@@ -1,0 +1,8 @@
+name=MBTI Roles
+id=MBTIRoles
+description=MBTI Roles B42: Role+Type XP/mood, all 16 type micro-hooks, sandbox knobs.
+author=Nipsy/Antilitist
+modversion=0.7.0
+versionMin=42.0
+poster=poster.png
+icon=icon.png

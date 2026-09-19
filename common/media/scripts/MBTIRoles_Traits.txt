@@ -1,0 +1,255 @@
+module MBTIRoles {
+
+    /* =====================================================================
+       ROLES (pick one) — free; mutually exclusive with other roles
+       ===================================================================== */
+
+    character_trait_definition MBTIRoles:Analyst
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:Analyst,
+        Cost = 1,
+        UIName = UI_trait_MBTI_Analyst,
+        UIDescription = UI_trait_MBTI_AnalystDesc,
+        MutuallyExclusiveTraits = MBTIRoles:Diplomat;MBTIRoles:Sentinel;MBTIRoles:Explorer,
+    }
+
+    character_trait_definition MBTIRoles:Diplomat
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:Diplomat,
+        Cost = 1,
+        UIName = UI_trait_MBTI_Diplomat,
+        UIDescription = UI_trait_MBTI_DiplomatDesc,
+        MutuallyExclusiveTraits = MBTIRoles:Analyst;MBTIRoles:Sentinel;MBTIRoles:Explorer,
+    }
+
+    character_trait_definition MBTIRoles:Sentinel
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:Sentinel,
+        Cost = 1,
+        UIName = UI_trait_MBTI_Sentinel,
+        UIDescription = UI_trait_MBTI_SentinelDesc,
+        MutuallyExclusiveTraits = MBTIRoles:Analyst;MBTIRoles:Diplomat;MBTIRoles:Explorer,
+    }
+
+    character_trait_definition MBTIRoles:Explorer
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:Explorer,
+        Cost = 1,
+        UIName = UI_trait_MBTI_Explorer,
+        UIDescription = UI_trait_MBTI_ExplorerDesc,
+        MutuallyExclusiveTraits = MBTIRoles:Analyst;MBTIRoles:Diplomat;MBTIRoles:Sentinel,
+    }
+
+    /* =====================================================================
+       TYPES (pick one) — free; grant matching role; exclusive vs other types
+       + exclusive vs non-matching roles
+       ===================================================================== */
+
+    /* --- Analysts --- */
+
+    character_trait_definition MBTIRoles:INTJ
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:INTJ,
+        Cost = 1,
+        UIName = UI_trait_MBTI_INTJ,
+        UIDescription = UI_trait_MBTI_INTJDesc,
+        GrantedTraits = MBTIRoles:Analyst,
+        MutuallyExclusiveTraits = MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Diplomat;MBTIRoles:Sentinel;MBTIRoles:Explorer,
+    }
+
+    character_trait_definition MBTIRoles:INTP
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:INTP,
+        Cost = 1,
+        UIName = UI_trait_MBTI_INTP,
+        UIDescription = UI_trait_MBTI_INTPDesc,
+        GrantedTraits = MBTIRoles:Analyst,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Diplomat;MBTIRoles:Sentinel;MBTIRoles:Explorer,
+    }
+
+    character_trait_definition MBTIRoles:ENTJ
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:ENTJ,
+        Cost = 1,
+        UIName = UI_trait_MBTI_ENTJ,
+        UIDescription = UI_trait_MBTI_ENTJDesc,
+        GrantedTraits = MBTIRoles:Analyst,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Diplomat;MBTIRoles:Sentinel;MBTIRoles:Explorer,
+    }
+
+    character_trait_definition MBTIRoles:ENTP
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:ENTP,
+        Cost = 1,
+        UIName = UI_trait_MBTI_ENTP,
+        UIDescription = UI_trait_MBTI_ENTPDesc,
+        GrantedTraits = MBTIRoles:Analyst,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Diplomat;MBTIRoles:Sentinel;MBTIRoles:Explorer,
+    }
+
+    /* --- Diplomats --- */
+
+    character_trait_definition MBTIRoles:INFJ
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:INFJ,
+        Cost = 1,
+        UIName = UI_trait_MBTI_INFJ,
+        UIDescription = UI_trait_MBTI_INFJDesc,
+        GrantedTraits = MBTIRoles:Diplomat,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Analyst;MBTIRoles:Sentinel;MBTIRoles:Explorer,
+    }
+
+    character_trait_definition MBTIRoles:INFP
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:INFP,
+        Cost = 1,
+        UIName = UI_trait_MBTI_INFP,
+        UIDescription = UI_trait_MBTI_INFPDesc,
+        GrantedTraits = MBTIRoles:Diplomat,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Analyst;MBTIRoles:Sentinel;MBTIRoles:Explorer,
+    }
+
+    character_trait_definition MBTIRoles:ENFJ
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:ENFJ,
+        Cost = 1,
+        UIName = UI_trait_MBTI_ENFJ,
+        UIDescription = UI_trait_MBTI_ENFJDesc,
+        GrantedTraits = MBTIRoles:Diplomat,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Analyst;MBTIRoles:Sentinel;MBTIRoles:Explorer,
+    }
+
+    character_trait_definition MBTIRoles:ENFP
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:ENFP,
+        Cost = 1,
+        UIName = UI_trait_MBTI_ENFP,
+        UIDescription = UI_trait_MBTI_ENFPDesc,
+        GrantedTraits = MBTIRoles:Diplomat,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Analyst;MBTIRoles:Sentinel;MBTIRoles:Explorer,
+    }
+
+    /* --- Sentinels --- */
+
+    character_trait_definition MBTIRoles:ISTJ
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:ISTJ,
+        Cost = 1,
+        UIName = UI_trait_MBTI_ISTJ,
+        UIDescription = UI_trait_MBTI_ISTJDesc,
+        GrantedTraits = MBTIRoles:Sentinel,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Analyst;MBTIRoles:Diplomat;MBTIRoles:Explorer,
+    }
+
+    character_trait_definition MBTIRoles:ISFJ
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:ISFJ,
+        Cost = 1,
+        UIName = UI_trait_MBTI_ISFJ,
+        UIDescription = UI_trait_MBTI_ISFJDesc,
+        GrantedTraits = MBTIRoles:Sentinel,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Analyst;MBTIRoles:Diplomat;MBTIRoles:Explorer,
+    }
+
+    character_trait_definition MBTIRoles:ESTJ
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:ESTJ,
+        Cost = 1,
+        UIName = UI_trait_MBTI_ESTJ,
+        UIDescription = UI_trait_MBTI_ESTJDesc,
+        GrantedTraits = MBTIRoles:Sentinel,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Analyst;MBTIRoles:Diplomat;MBTIRoles:Explorer,
+    }
+
+    character_trait_definition MBTIRoles:ESFJ
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:ESFJ,
+        Cost = 1,
+        UIName = UI_trait_MBTI_ESFJ,
+        UIDescription = UI_trait_MBTI_ESFJDesc,
+        GrantedTraits = MBTIRoles:Sentinel,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Analyst;MBTIRoles:Diplomat;MBTIRoles:Explorer,
+    }
+
+    /* --- Explorers --- */
+
+    character_trait_definition MBTIRoles:ISTP
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:ISTP,
+        Cost = 1,
+        UIName = UI_trait_MBTI_ISTP,
+        UIDescription = UI_trait_MBTI_ISTPDesc,
+        GrantedTraits = MBTIRoles:Explorer,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Analyst;MBTIRoles:Diplomat;MBTIRoles:Sentinel,
+    }
+
+    character_trait_definition MBTIRoles:ISFP
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:ISFP,
+        Cost = 1,
+        UIName = UI_trait_MBTI_ISFP,
+        UIDescription = UI_trait_MBTI_ISFPDesc,
+        GrantedTraits = MBTIRoles:Explorer,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ESTP;MBTIRoles:ESFP;MBTIRoles:Analyst;MBTIRoles:Diplomat;MBTIRoles:Sentinel,
+    }
+
+    character_trait_definition MBTIRoles:ESTP
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:ESTP,
+        Cost = 1,
+        UIName = UI_trait_MBTI_ESTP,
+        UIDescription = UI_trait_MBTI_ESTPDesc,
+        GrantedTraits = MBTIRoles:Explorer,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESFP;MBTIRoles:Analyst;MBTIRoles:Diplomat;MBTIRoles:Sentinel,
+    }
+
+    character_trait_definition MBTIRoles:ESFP
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = MBTIRoles:ESFP,
+        Cost = 1,
+        UIName = UI_trait_MBTI_ESFP,
+        UIDescription = UI_trait_MBTI_ESFPDesc,
+        GrantedTraits = MBTIRoles:Explorer,
+        MutuallyExclusiveTraits = MBTIRoles:INTJ;MBTIRoles:INTP;MBTIRoles:ENTJ;MBTIRoles:ENTP;MBTIRoles:INFJ;MBTIRoles:INFP;MBTIRoles:ENFJ;MBTIRoles:ENFP;MBTIRoles:ISTJ;MBTIRoles:ISFJ;MBTIRoles:ESTJ;MBTIRoles:ESFJ;MBTIRoles:ISTP;MBTIRoles:ISFP;MBTIRoles:ESTP;MBTIRoles:Analyst;MBTIRoles:Diplomat;MBTIRoles:Sentinel,
+    }
+}

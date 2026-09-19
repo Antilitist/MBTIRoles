@@ -1,0 +1,62 @@
+MBTI Roles — Workshop upload checklist (v0.7.0)
+================================================
+
+IN-GAME WORKSHOP FOLDER (upload this)
+-------------------------------------
+  X:\Users\USER\Zomboid\Workshop\MBTIRoles\
+
+  (Zomboid cache on F: via -cachedir=X:\Users\USER\Zomboid)
+
+  workshop.txt                 (id=3784015811 — update existing item)
+  preview.png                  (256x256)
+  Contents\mods\MBTIRoles\
+    common\...
+    42\...
+    icon.png
+    poster.png
+    mod.info
+
+IN PZ
+-----
+  Main Menu -> Workshop -> Create and update items
+  Select MBTIRoles
+  Confirm title / description / tags / visibility
+  This is an UPDATE to existing id=3784015811 (keep id in workshop.txt)
+
+SOURCE OF TRUTH
+---------------
+  F:\Grok\Nipsy\MBTIRoles\
+
+  After edits: re-copy common + 42 into Workshop package (package-workshop.ps1)
+
+DO NOT UPLOAD
+-------------
+  docs\ (dev notes only)
+  Local play path as package root:
+    X:\Users\USER\Zomboid\mods\MBTIRoles\
+
+MOD.INFO
+--------
+  id=MBTIRoles
+  author=Nipsy/Antilitist
+  modversion=0.7.0
+  versionMin=42.0
+
+TAGS (workshop.txt)
+-------------------
+  Build 42;Misc;Realistic;Skills;Traits
+
+PRE-UPLOAD SMOKE
+----------------
+  [ ] Enable MBTIRoles, new character, pick a Type (e.g. ENFP)
+  [ ] Traits/icons look correct
+  [ ] Start popup shows Role/Type + sandbox stats; X closes
+  [ ] Sandbox page "MBTI Roles" appears (incl. Type micro-hooks + debug)
+  [ ] Console: Type hooks loaded (all 16 types, v0.7.0)
+  [ ] No red MBTI errors on load
+  [ ] Optional: one type PROC smoke (e.g. ISTP padding or ENFP forage)
+
+AFTER UPLOAD
+------------
+  [ ] Workshop page shows 0.7.0 changelog
+  [ ] Subscribe / friends visibility test if needed

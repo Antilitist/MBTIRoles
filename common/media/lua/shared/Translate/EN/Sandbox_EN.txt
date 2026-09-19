@@ -1,0 +1,33 @@
+Sandbox_EN = {
+	Sandbox_MBTIRoles = "MBTI Roles",
+
+	Sandbox_MBTIRoles_Enabled = "Enable MBTI system",
+	Sandbox_MBTIRoles_Enabled_tooltip = "When off, MBTI traits still appear at chargen but grant no XP, research speed, or mood effects.",
+
+	Sandbox_MBTIRoles_RoleXPPercent = "Role XP bonus %%",
+	Sandbox_MBTIRoles_RoleXPPercent_tooltip = "Primary Role skill XP bonus (0-25%%).<br>Design baseline is 15%% (e.g. Analyst Electrical/Mechanics).<br>Secondary role bonuses (e.g. +10%% Literature) scale relative to this.<br>0%% disables Role XP bonuses.",
+
+	Sandbox_MBTIRoles_RoleXPPenaltyPercent = "Role XP penalty %%",
+	Sandbox_MBTIRoles_RoleXPPenaltyPercent_tooltip = "Role skill XP penalty strength (0-25%%).<br>Design baseline is 10%% (e.g. Analyst -Foraging, Explorer -Literature).<br>0%% disables Role XP penalties.",
+
+	Sandbox_MBTIRoles_TypeXPPercent = "Type XP bonus %%",
+	Sandbox_MBTIRoles_TypeXPPercent_tooltip = "Type fine-tune XP bonus on the type's focus skill (0-25%%).<br>Design baseline is 5%% (e.g. INTJ +Mechanics).<br>0%% disables Type XP tweaks.",
+
+	Sandbox_MBTIRoles_ResearchSpeedPercent = "Analyst research speed %%",
+	Sandbox_MBTIRoles_ResearchSpeedPercent_tooltip = "How much faster Analysts research recipes (0-25%% shorter duration).<br>Design baseline is 15%% faster.<br>0%% disables research speed bonus.",
+
+	Sandbox_MBTIRoles_MoodStrengthPercent = "Mood effect strength %%",
+	Sandbox_MBTIRoles_MoodStrengthPercent_tooltip = "Scales all MBTI mood boosts (pictures, mementos, research, harvest, forage, brochures).<br>0%% = no mood effects. 15%% = design baseline strength. 25%% = stronger mood.",
+
+	Sandbox_MBTIRoles_ShowStartPopup = "Show MBTI summary on game start",
+	Sandbox_MBTIRoles_ShowStartPopup_tooltip = "When on, a popup lists your Role/Type and current sandbox-scaled stats when you load into the game.",
+
+	Sandbox_MBTIRoles_TypeHooksEnabled = "Enable Type micro-hooks",
+	Sandbox_MBTIRoles_TypeHooksEnabled_tooltip = "Unique mild hooks for all 16 MBTI types (mood + short XP windows). Personality flavor only — not combat superpowers.",
+
+	Sandbox_MBTIRoles_TypeHooksStrength = "Type micro-hooks strength",
+	Sandbox_MBTIRoles_TypeHooksStrength_tooltip = "0-25. Strength of type micro-hooks (default 12). Affects mood size and chance rolls. 0 = off. 15 = design baseline.",
+
+	Sandbox_MBTIRoles_TypeHooksDebug = "Type micro-hooks debug log",
+	Sandbox_MBTIRoles_TypeHooksDebug_tooltip = "When on, prints TRY/MISS/SKIP detail for type hooks in the console. Successful PROCs always log even when this is off.",
+}

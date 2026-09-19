@@ -1,0 +1,61 @@
+VERSION = 1,
+
+option MBTIRoles.Enabled
+{
+	type = boolean, default = true,
+	page = MBTIRoles, translation = MBTIRoles_Enabled,
+}
+
+option MBTIRoles.RoleXPPercent
+{
+	type = integer, min = 0, max = 25, default = 15,
+	page = MBTIRoles, translation = MBTIRoles_RoleXPPercent,
+}
+
+option MBTIRoles.RoleXPPenaltyPercent
+{
+	type = integer, min = 0, max = 25, default = 10,
+	page = MBTIRoles, translation = MBTIRoles_RoleXPPenaltyPercent,
+}
+
+option MBTIRoles.TypeXPPercent
+{
+	type = integer, min = 0, max = 25, default = 5,
+	page = MBTIRoles, translation = MBTIRoles_TypeXPPercent,
+}
+
+option MBTIRoles.ResearchSpeedPercent
+{
+	type = integer, min = 0, max = 25, default = 15,
+	page = MBTIRoles, translation = MBTIRoles_ResearchSpeedPercent,
+}
+
+option MBTIRoles.MoodStrengthPercent
+{
+	type = integer, min = 0, max = 25, default = 15,
+	page = MBTIRoles, translation = MBTIRoles_MoodStrengthPercent,
+}
+
+option MBTIRoles.ShowStartPopup
+{
+	type = boolean, default = true,
+	page = MBTIRoles, translation = MBTIRoles_ShowStartPopup,
+}
+
+option MBTIRoles.TypeHooksEnabled
+{
+	type = boolean, default = true,
+	page = MBTIRoles, translation = MBTIRoles_TypeHooksEnabled,
+}
+
+option MBTIRoles.TypeHooksStrength
+{
+	type = integer, min = 0, max = 25, default = 12,
+	page = MBTIRoles, translation = MBTIRoles_TypeHooksStrength,
+}
+
+option MBTIRoles.TypeHooksDebug
+{
+	type = boolean, default = false,
+	page = MBTIRoles, translation = MBTIRoles_TypeHooksDebug,
+}
